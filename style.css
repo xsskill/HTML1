@@ -134,6 +134,39 @@ table {
   border-spacing: 0;
 }
 
+/*
+⇝Micro clearfix
+*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
 /* 
  Styling
 */
@@ -145,22 +178,23 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 960px;
   margin: auto;
   background-color: #111111;
+  overflow: auto;
 }
 
-.container .header{
+.container .header {
   padding: 20px;
   padding-bottom: 8px;
 }
 
-.container h1.judul{
+.container h1.judul {
   font-weight: bold;
   font-size: 40px;
 }
 
-.header ul li{
+.header ul li {
   display: inline-block;
   margin-top: 18px;
   margin-right: 10px;
@@ -181,24 +215,65 @@ body {
   margin-bottom: 25px;
 }
 
-.content h2{
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.main h2 {
   font-weight: bold;
   font-size: 32px;
 }
 
-.content .penulis {
+.main .penulis {
   font-size: 14px;
   margin-top: -5px;
 }
 
-.penulis a{
+.penulis a {
   text-decoration: none;
   color: salmon;
 }
 
-.content p{
+.main p {
   font-size: 16px;
   margin-bottom: 18px;
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+}
+
+.sidebar h2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding-right: 20px;
+}
+
+.sidebar p {
+  font-size: 16px;
+}
+
+.socialmedia {
+  width: 290px;
+  margin-top: 40px;
+  border: solid 3px salmon;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.logo {
+  height: 140px;
 }
 
 .footer {
@@ -206,7 +281,40 @@ body {
   padding: 20px;
 }
 
-.footer p{
+.Twitter img {
+  width: 70px;
+  height: 70px;
+}
+
+.Facebook img {
+  width: 60px;
+  height: 60px;
+  padding-right: 24px;
+}
+
+.Telegram img {
+  width: 60px;
+  height: 60px;
+}
+
+.Youtube img {
+  width: 70px;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.Instagram img {
+  width: 60px;
+  height: 60px;
+}
+
+.Whatsapp img {
+  width: 60px;
+  height: 60px;
+  padding-right: 30px;
+}
+
+.footer p {
   text-align: center;
   font-size: 18px;
 }
