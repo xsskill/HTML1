@@ -1,61 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML</title>
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-<body>
-  <!--- Container -->
-  <div class="container">
-    <!--- Header -->
-    <div class="header">
-      <h1 class="judul">My Website</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <!--- Image -->
-    </div>
-    <div class="gambar"></div>
-    <div class="content cf">
-      <div class="main">
-        <h2>Judul Artikel</h2>
-        <p class="penulis">Ditulis oleh <a href="#">Rici Trisna P</a> pada Kamis, 06 Mei 2021</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatibus magnam temporibus adipisci molestias consectetur, nesciunt consequatur alias omnis molestiae quod tempore ratione quas eaque, quibusdam voluptatum esse quia. Ullam sed libero assumenda aspernatur! Fugiat beatae vel quibusdam sit natus excepturi hic iusto, illo autem, rem voluptas architecto corporis accusamus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt error odit soluta tempora, architecto hic sapiente. Eveniet ab ullam quas eaque illo in nobis delectus error inventore tempore. Nihil nam, incidunt placeat numquam, amet, quo dolores inventore natus pariatur maxime veniam enim, ab consectetur nulla accusamus quis quae saepe officiis odio sunt commodi. Voluptates pariatur, eaque quia architecto sunt ipsa, sint dolores itaque quidem sapiente optio error, aliquid! Nostrum ut dolor odio, asperiores inventore sunt voluptate sequi consequuntur ratione excepturi perferendis, eos totam accusantium fugiat nobis, quam commodi ipsa odit aspernatur perspiciatis ex nisi ipsam, deserunt magnam? Officia reprehenderit ipsam, ad accusamus fugiat voluptatibus dignissimos doloribus voluptatum hic quasi inventore maxime recusandae excepturi molestiae quam eos doloremque praesentium adipisci!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores unde quaerat cumque quos, vel voluptatibus quasi perferendis odit in velit eaque officiis maxime laborum cum atque iusto ut facere similique, architecto nemo doloribus odio! Facilis dolorum, deleniti quisquam quis expedita aperiam delectus iusto atque, laudantium quo repudiandae magnam modi! Magnam animi officiis modi ex asperiores debitis eos obcaecati illum dignissimos.</p>
-      </div>
-      <div class="sidebar">
-        <h2>Tentang Penulis</h2>
-        <img src="Image/IMG_20200708_222419.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aspernatur quidem perferendis qui eveniet iste vitae illo voluptatibus. Molestias eos, debitis. Eos nobis quisquam voluptas magnam, obcaecati cum reiciendis suscipit, sunt quo molestiae tempore error tenetur? Necessitatibus libero, at rerum dolore ab cupiditate nisi natus, hic dicta soluta aliquam voluptas aperiam, assumenda aut veniam unde. Quod possimus cumque numquam ad ex, ea blanditiis, quidem quos sapiente animi a ut rem.</p>
-        <div class="socialmedia">
-          <h2 class="cf">Get in Touch with me</h2>
-          <div class="logo">
-            <a class="Whatsapp" href=""><img src="Logo/Whatsapp.png" alt=""></a>
-            <a class="Instagram" href=""><img src="Logo/Instagram.png" alt=""></a>
-            <a class="Twitter" href=""><img src="Logo/Twitter.png" alt=""></a>
-            <a class="Youtube" href=""><img src="Logo/Youtube.png" alt=""></a>
-            <a class="Facebook" href=""><img src="Logo/Facebook.png" alt=""></a>
-            <a class="Telegram"href=""><img src="Logo/Telegram.png" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <p>Copyright 2021 Rici Trisna P</p>
-    </div>
-    </footer>
-  </div>
-</body>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
+        <title>Mini portfolio website - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="assets/img/Kiki Smiling Transparent ratio 5.png" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Rici Trisna Putra</h2>
+                    <h3 class="profile__profession">Anime Lovers</h3>
+
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/rici_trisna_putra/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rici-trisna-putra-b90a02245/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/xsskill" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://twitter.com/ricitrisna1" target="_blank" class="profile__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">
+                            Years of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">1</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>    
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">0</h3>
+                        <p class="profile__info-description">Satisfied <br> customers</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/Ricitp CV.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a href="https://api.whatsapp.com/send?phone=6281357701074&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <!-- <a href="https://m.me/bedimcode" target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/project1.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Todo List App</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Portfolio Website</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+<!-- 
+                        <article class="projects__card">
+                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Fast food app</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Travel app</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Design</span>
+                                    <h3 class="projects__title">Music app design</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article> -->
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Frontend Developer</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Noob</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Noob</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend Developer</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Noob</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Noob</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; RiciTrisnaPutra. All rights reserved
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
